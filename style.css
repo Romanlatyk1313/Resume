@@ -34,7 +34,7 @@ header {
   bottom: 200px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  
   padding-left: 10px;
 }
 .frontend p {
@@ -213,6 +213,7 @@ footer p {
 .myWorks {
   background-color: #575761;
 }
+
 .myWorks-title {
   height: 70px;
   font-size: 34px;
@@ -222,18 +223,277 @@ footer p {
   font-weight: 800;
 }
 .myWorks-boks {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-top: 20px;
-  border-bottom: #49422e solid 2px;
+  position: relative;
+  display: grid;
+  grid-template-rows:150px 300px ;
+align-items: center;
+justify-content: center;
+width: 1249px;
 }
 .myWorks-boks img {
-  height: 100px;
+ max-width: 500px;
+ max-height: 300px;
+ 
+}
+.myWorks-boks a{
+  display: flex;
+  align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .myWorks-boks p {
   font-size: 24px;
   color: #e6e5e2;
-  width: 300px;
-  white-space: pre-line;
+  padding: 10px;
+  text-align: center;
 }
+
+
+.carousel {
+  position: relative;
+  width: 1250px;
+  background: rgb(34, 34, 42);
+}
+
+.carousel img {
+
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 250px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 34px;
+  line-height: 44px;
+  color: #444;
+  display: block;
+  z-index: 100;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.prev {
+  left: 30px;
+}
+
+.next {
+  right: 30px;
+}
+
+.gallery {
+  
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 500px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
+@media screen and (max-width: 1250px),
+  screen and (max-width: 1250px) and (min-width: 1px){
+    body{
+      width: 1000px;
+    }
+    .about {
+      display: grid;
+      grid-template-columns: 40% 60%;
+    }
+    .frontend{
+      width: 500px;
+    }
+ 
+  .wrapper-h1 {
+    margin-inline-end: 40px;
+  }
+   h1{
+    padding-top: 40px;
+    
+  }
+  .gallery ul {
+    
+  }
+  .carousel{
+    width: 1000px;
+  }
+
+  .myWorks-boks{
+    width: 999px;
+  }
+  }
+
+@media screen and (max-width: 800px),
+  screen and (max-width: 800px) and (min-width: 1px){
+    body{
+      width: 600px;
+    }
+    header {
+      background-color: #f0eef1;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      flex-direction: column;
+    }
+    .logo{
+      width: 100%;
+    }
+    .title {
+      position: initial;
+      padding: 20px;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      background-color: rgba(195, 162, 41, 0.5);
+    }
+    .frontend {
+      position: initial;
+     
+      width: 600px;
+     
+      right: 0;
+    
+      align-items: center;
+      
+      padding-left: 10px;
+    }
+    .wrapper-h1 {
+      margin-inline-end: 0px;
+    }
+    .aboutMe-title, .worcMe, .courses{
+      padding: 0;
+    }
+    h1 {
+      font-size: 34px;
+      text-align: center;
+      padding-top: 10px;
+      line-height: 40px;
+      white-space: inherit;
+    }
+    .aboutMe-title{
+      padding: 80px 20px 20px;
+    }
+   .courses h4:first-of-type{
+      padding-top: 10px;
+    }
+    .frontend h4:first-of-type{
+      padding-top: 10px;
+    }
+    #courses-item{
+      padding-top: 0px;
+    }
+    .block-aboutMe .frontend{
+      position: absolute;
+      top: 0;
+    }
+    .about {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .worcMe .inline {
+      margin-left: 0px;
+    }
+    .contacts .inline{
+      margin-left: 0;
+    }
+    h3{
+      text-align: center;
+    }
+    .wrapper-contakt{
+      padding-right: 120px;
+    }
+    .skills li{
+      margin-right: 120px;
+    }
+    .carousel{
+      width: 600px;
+    }
+    .myWorks-boks{
+      width: 599px;
+    }
+  }
+  @media screen and (max-width: 600px),
+  screen and (max-width: 600px) and (min-width: 1px){
+    body{
+      width: 420px;
+    }
+    h1{
+      font-size: 24px;
+    }
+    .frontend {
+     
+      background-color: #2f2e36;
+      width: 420px;
+      height: 70px;
+      right: 0;
+      bottom: 200px;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+    }
+    .aboutMe-title{
+      font-size: 12px;
+    }
+    .frontend p{
+      font-size: 20px;
+    }
+    h5{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    h3{
+      font-size: 20px;
+      line-height: 40px;
+    }
+    .contacts a{
+      font-size: 14px;
+    }
+    .wrapper-contakt img {
+      max-width: 80%;
+    }
+    .skills li{
+      font-size: 14px;
+      line-height: 30px;
+    }
+    .carousel{
+      width: 420px;
+    }
+    .myWorks-boks{
+      width: 419px;
+      padding: 10px;
+    }
+    .myWorks-boks img {
+      max-width: 400px;
+      max-height: 300px;
+    }
+    .myWorks-boks p{
+     font-size: 14px;
+    }
+    .arrow {
+      top:130px;
+    }
+    .worcMe ul li{
+      font-size: 20px;
+    }
+    h4{
+      font-size: 20px;
+    }
+  }
