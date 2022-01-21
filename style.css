@@ -216,6 +216,7 @@ footer p {
 .myWorks-title {
   height: 70px;
   font-size: 34px;
+  line-height: 36px;
   text-align: center;
   color: #575761;
   background-color: #c3a229;
@@ -247,7 +248,9 @@ width: 1249px;
   text-align: center;
 }
 .myWorks-title a{
+  padding-top: 10px;
   font-size: 14px;
+  line-height: 16px;
 }
 
 .carousel {
