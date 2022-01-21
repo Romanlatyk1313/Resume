@@ -4,7 +4,6 @@
 body {
   width: 1250px;
   font-family: "Roboto", sans-serif;
-
   margin: 0 auto;
 }
 header {
@@ -247,7 +246,9 @@ width: 1249px;
   padding: 10px;
   text-align: center;
 }
-
+.myWorks-title a{
+  font-size: 14px;
+}
 
 .carousel {
   position: relative;

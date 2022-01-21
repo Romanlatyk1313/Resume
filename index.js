@@ -8,7 +8,6 @@ for(let li of carousel.querySelectorAll('li')) {
 
 let width = document.querySelector('.myDiv').offsetWidth
 
- 
 let count = 1; 
 
 let list = carousel.querySelector('ul');
