@@ -30,7 +30,7 @@ header {
   width: 690px;
   height: 70px;
   right: 0;
-  bottom: 200px;
+  bottom: 350px;
   display: flex;
   align-items: center;
   
@@ -336,7 +336,7 @@ width: 1249px;
     margin-inline-end: 40px;
   }
    h1{
-    padding-top: 40px;
+    padding-top: 280px;
     
   }
   .gallery ul {
