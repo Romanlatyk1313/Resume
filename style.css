@@ -150,11 +150,16 @@ a {
 .aboutMe-title a{
 color: #020202;
 }
-.aboutMe-title,
+
 .worcMe,
 .courses {
   font-size: 20px;
   padding: 130px 70px 20px 30px;
+  position: relative;
+}
+.aboutMe-title{
+  font-size: 20px;
+  padding: 130px 70px 20px 100px;
   position: relative;
 }
 .block-aboutMe {
