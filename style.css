@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Yeseva+One:regular);
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 body {
-  width: 1250px;
+  width: 950px;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
 }
@@ -12,8 +12,10 @@ header {
   justify-content: space-between;
   position: relative;
 }
-.logo {
-  width: 40%;
+.logo img {
+  width: auto;
+ margin: 0 auto;
+ padding-bottom: 20px;
 }
 .title {
   padding-bottom: 20px;
@@ -27,8 +29,8 @@ header {
 .frontend {
   position: absolute;
   background-color: #2f2e36;
-  width: 690px;
-  height: 70px;
+  width: 600px;
+  height: 50px;
   right: 0;
   bottom: 350px;
   display: flex;
@@ -56,7 +58,7 @@ header {
 .wrapper-h1 {
   margin-inline-end: 220px;
 }
-h1 {
+.name-title h1 {
   display: block;
   color: #27262e;
   font-size: 64px;
@@ -66,15 +68,17 @@ h1 {
   white-space: pre-line;
   line-height: 70px;
 }
+
 .about {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
 }
 .telImg{
   width: 70px;
 }
 
-.contacts {
+.contacts ,
+.logo {
   background-color: #27272f;
 }
 .contacts h3 {
@@ -92,18 +96,25 @@ h1 {
   background-color: #22222a;
 }
 h3 {
-  font-size: 44px;
-  margin-left: 40px;
+  font-size: 34px;
+  margin-left: 0px;
   counter-reset: #49422e;
   padding-right: 40px;
 }
 .softSkills {
   background-color: #22222a;
 }
+.wrapper-comtacts{
+  background-color: #27272f;
+}
+.wrapper-comtacts ul{
+ padding-top: 10px;
+ padding-inline-start:0px
+}
 a {
   text-decoration: none;
   color: #e6e5e2;
-  font-size: 24px;
+  font-size: 16px;
   position: relative;
   display: block;
   width: 100%;
@@ -111,7 +122,7 @@ a {
 .inline {
   height: 5px;
   background-color: #49422e;
-  margin-left: 100px;
+  
 }
 
 .wrapper-contakt {
@@ -123,19 +134,19 @@ a {
   padding-left: 30px;
 }
 .skills li {
-  font-size: 24px;
+  font-size: 20px;
   color: #c3a229;
-  padding: 10px 90px 10px 0;
+  padding: 0px 90px 10px 0;
   position: relative;
 }
 .skills li::after {
   content: " ";
   right: 20px;
-  bottom: 12px;
+  bottom: 11px;
   position: absolute;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border: solid 5px #c3a229;
   background-color: #49422e;
   border-radius: 50%;
@@ -154,19 +165,24 @@ color: #020202;
 .worcMe,
 .courses {
   font-size: 20px;
-  padding: 130px 70px 20px 30px;
+  padding: 70px 70px 0px 30px;
   position: relative;
 }
 .aboutMe-title{
   font-size: 20px;
-  padding: 130px 70px 20px 100px;
+  padding: 70px 70px 0px 100px;
+  position: relative;
+}
+.name-title{
+  font-size: 30px;
+  padding: 70px 70px 20px 100px;
   position: relative;
 }
 .block-aboutMe {
   position: relative;
 }
 .block-aboutMe .frontend {
-  top: 30px;
+  top: 0px;
 }
 
 .worcMe .frontend {
@@ -178,12 +194,13 @@ h4 {
   margin-left: 70px;
 }
 h5 {
-  margin-top: 10px;
+  margin-top: 0px;
   color: #3d4047;
   margin-left: 70px;
+  margin-bottom: 10px;
 }
 .worcMe li {
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   color: #3d4047;
@@ -197,7 +214,7 @@ h5 {
 }
 
 .courses .frontend {
-  top: 20px;
+  top: 0px;
 }
 .courses {
   position: relative;
@@ -209,17 +226,18 @@ h5 {
 .image img {
   height: 200px;
 }
+.aboutMe-title ul{
+  padding-inline-start: 0px;
+}
 footer {
   display: block;
   text-align: center;
   background-color: #c3a229;
-  height: 70px;
+  height: 50px;
   font-weight: 800;
   font-size: 34px;
 }
-footer p {
-  padding-top: 10px;
-}
+
 .myWorks {
   background-color: #575761;
 }
